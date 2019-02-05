@@ -3,7 +3,7 @@
     "class_version": 8,
     "link_map": {
         "link100": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
@@ -11,11 +11,11 @@
         "link101": {
             "dst_id": "11111111-1111-1111-1111-000000000003",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_id": "11111111-1111-1111-1111-000000000001",
             "src_view_id": "output0"
         },
-        "link102": {
-            "dst_id": "11111111-1111-1111-1111-000000000001",
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000003",
             "src_view_id": "output0"
@@ -44,9 +44,9 @@
         },
         "input": {},
         "output": {
-            "11111111-1111-1111-1111-000000000001_output0": {
+            "11111111-1111-1111-1111-000000000002_output0": {
                 "label": {
-                    "value": "JSON Formatter - output0"
+                    "value": "XML Formatter - output0"
                 },
                 "view_type": {
                     "value": "binary"
@@ -86,18 +86,6 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 4,
-                "grid_y_int": 3,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": "snap catagory"
-            },
-            "11111111-1111-1111-1111-000000000002": {
-                "error": {},
                 "grid_x_int": 2,
                 "grid_y_int": 3,
                 "index": 0,
@@ -107,6 +95,18 @@
                 "rot_int": 0,
                 "rot_tail_int": 0,
                 "source": "iris panel"
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
             },
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
@@ -187,82 +187,9 @@
             }
         },
         "11111111-1111-1111-1111-000000000001": {
-            "class_id": "com-snaplogic-snaps-transform-jsonformatter",
-            "class_version": 2,
-            "instance_id": "11111111-1111-1111-1111-000000000001",
-            "property_map": {
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "JSON Formatter"
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "settings": {
-                    "contentPath": {
-                        "value": "$"
-                    },
-                    "formatSingleDocument": {
-                        "value": false
-                    },
-                    "header": {
-                        "value": [
-                            {
-                                "expression": {
-                                    "expression": true,
-                                    "value": ""
-                                }
-                            }
-                        ]
-                    },
-                    "ignoreEmptyStream": {
-                        "value": false
-                    },
-                    "jsonLines": {
-                        "value": false
-                    },
-                    "prettyPrint": {
-                        "value": false
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000002": {
             "class_id": "com-snaplogic-snaps-transform-csvparser",
             "class_version": 3,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
                 "error": {
                     "error0": {
@@ -328,6 +255,69 @@
                         "value": 0
                     },
                     "validateHeaders": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-transform-xmlformatter",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "XML Formatter"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "ignoreEmptyStream": {
+                        "value": false
+                    },
+                    "isCanonicalXmlOutput": {
+                        "value": false
+                    },
+                    "maxSchemaLevels": {
+                        "value": 10
+                    },
+                    "root": {
+                        "value": "DocumentRoot"
+                    },
+                    "validate": {
                         "value": false
                     }
                 },

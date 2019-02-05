@@ -7,12 +7,6 @@
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
-        },
-        "link101": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000001",
-            "src_view_id": "output0"
         }
     },
     "property_map": {
@@ -36,8 +30,25 @@
                 "value": null
             }
         },
-        "input": {},
+        "input": {
+            "11111111-1111-1111-1111-000000000002_input0": {
+                "label": {
+                    "value": "Mapper - input0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
         "output": {
+            "11111111-1111-1111-1111-000000000001_output0": {
+                "label": {
+                    "value": "CSV Parser - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
             "11111111-1111-1111-1111-000000000002_output0": {
                 "label": {
                     "value": "Mapper - output0"
@@ -69,7 +80,7 @@
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 1,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -81,7 +92,7 @@
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 2,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": 0,
                 "input": {},
                 "output": {},
@@ -93,7 +104,7 @@
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},

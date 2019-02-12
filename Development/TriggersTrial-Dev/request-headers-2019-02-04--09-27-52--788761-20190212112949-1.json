@@ -1,0 +1,19 @@
+{
+    "Accept": "*/*", 
+    "Authorization": {
+        "type": "bearer_token"
+    }, 
+    "Cache-Control": "no-cache", 
+    "Connection": "close", 
+    "Content-Length": "", 
+    "Content-Type": "", 
+    "Host": "elastic.snaplogic.com", 
+    "Method": "GET", 
+    "Postman-Token": "87a626a9-df27-49bd-8c0c-efb957d433b2", 
+    "Query": {
+        "fileName": "test-trigger-"
+    }, 
+    "User-Agent": "PostmanRuntime/7.6.0", 
+    "X-Forwarded-For": "164.39.75.108, 164.39.75.108", 
+    "X-Real-Ip": "164.39.75.108"
+}
